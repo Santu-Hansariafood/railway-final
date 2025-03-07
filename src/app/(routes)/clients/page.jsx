@@ -1,6 +1,6 @@
 import dynamic from "next/dynamic";
-const Layout = dynamic(() => import("@/layout/Layout"));
-const Client = dynamic(() => import("@/components/ui/Clients/Clients"));
+const Layout = dynamic(() => import("@/layout/Layout"),{ ssr: false });
+const Client = dynamic(() => import("@/components/ui/Clients/Clients"),{ ssr: false });
 
 const data = [
   { id: 1, image: "https://picsum.photos/id/10/200/300", height: 400 },

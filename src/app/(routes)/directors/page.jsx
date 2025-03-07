@@ -3,9 +3,9 @@ import ProfileImage1 from "../../../../public/images/slide1.jpg";
 import ProfileImage2 from "../../../../public/images/slide1.jpg";
 import ProfileImage3 from "../../../../public/images/slide1.jpg";
 
-const Cards = dynamic(()=>import("@/components/common/Cards/Cards"));
-const Layout = dynamic(()=>import("@/layout/Layout"));
-const DecryptedText = dynamic(()=>import("@/components/animation/DecryptedText/DecryptedText"));
+const Cards = dynamic(()=>import("@/components/common/Cards/Cards"),{ ssr: false });
+const Layout = dynamic(()=>import("@/layout/Layout"),{ ssr: false });
+const DecryptedText = dynamic(()=>import("@/components/animation/DecryptedText/DecryptedText"),{ ssr: false });
 
 const Page = () => {
   const teamMembers = [
