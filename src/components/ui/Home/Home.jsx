@@ -2,12 +2,15 @@
 
 import { useEffect, useState } from "react";
 import Slider from "react-slick";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
 import Image from "next/image";
 import Typewriter from "typewriter-effect";
 
 const Home = () => {
+  useEffect(() => {
+    require("slick-carousel/slick/slick.css");
+    require("slick-carousel/slick/slick-theme.css");
+  }, []);
+
   const images = [
     "/images/slide1.jpg",
     "/images/slide2.jpg",
@@ -45,7 +48,7 @@ const Home = () => {
             <div className="absolute inset-0 flex flex-col items-start justify-center bg-black bg-opacity-50 text-white p-8 text-left">
               <h1 className="text-4xl md:text-6xl font-bold">
                 <Typewriter
-                  key={currentSlide} // Ensures re-render on slide change
+                  key={currentSlide}
                   options={{
                     strings: [`Dynamic Title ${index + 1}`, `Title ${index + 1} Back`],
                     autoStart: true,
