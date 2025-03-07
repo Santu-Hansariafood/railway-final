@@ -1,10 +1,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-    output: "standalone",
-    experimental: {
-      optimizeCss: false,
-    },
+    reactStrictMode: false, // Disable strict mode
   };
   
-  export default nextConfig;
+  module.exports = nextConfig;
   
