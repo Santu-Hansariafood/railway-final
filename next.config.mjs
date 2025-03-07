@@ -1,8 +1,8 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-    output: "standalone", // Ensures compatibility with Netlify
+    output: "standalone",
     experimental: {
-      optimizeCss: false, // Disable this to prevent entryCSSFiles error
+      optimizeCss: false,
     },
   };
   
