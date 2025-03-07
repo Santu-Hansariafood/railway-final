@@ -1,7 +1,7 @@
-import Home from "@/app/components/ui/Home/Home";
-import About from "@/app/components/ui/About/About";
-import Services from "@/app/components/ui/Services/Services";
-
+import Home from "@/components/ui/Home/Home";
+import About from "@/components/ui/About/About";
+import Services from "@/components/ui/Services/Services";
+import Contact from "@/components/ui/Contact/Contact"; // ✅ Ensure this exists
 
 export default function HomePage() {
   return (
@@ -9,7 +9,7 @@ export default function HomePage() {
       <Home />
       <About />
       <Services />
-      {/* <Contact /> */}
+      <Contact />
     </main>
   );
 }
