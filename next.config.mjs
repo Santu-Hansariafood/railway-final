@@ -2,7 +2,7 @@
 const nextConfig = {
     output: "standalone", // Ensures compatibility with Netlify
     experimental: {
-      optimizeCss: true, // Helps with the entryCSSFiles error
+      optimizeCss: false, // Disable this to prevent entryCSSFiles error
     },
   };
   
