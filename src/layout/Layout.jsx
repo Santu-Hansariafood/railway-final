@@ -1,4 +1,3 @@
-"use client"
 import dynamic from "next/dynamic";
 
 const Header = dynamic(() => import("@/components/common/Header/Header"));
